@@ -1,33 +1,34 @@
 public class StringAlgorithms {
 
-   public static void printCharacters(String word) {
+   public static String printCharacters(String word) {
+      String newString = "";
       for(int i = 0; i < word.length(); i ++) {
-         System.out.println(word.substring(i, i+1));
+         newString += (word.substring(i, i+1) + "\n");
       }
+      return newString;
    }   
 
-   public static void reverseWord(String word) {
+   public static String reverseWord(String word) {
       String newString = "";
       for(int i = word.length(); i > 0; i --) {
          newString += word.substring(i-1, i);
          
       }  
-      System.out.println(newString); 
+      return newString; 
    }
    
-   /* public static void capitalizeString(String sentence) {
+   public static String capitalizeString(String sentence) {
       String newString = "";
-      for(int i = 0; i <= sentence.length(); i ++) {
-         if (sentence.indexOf(i) = 0) {
-            newString += sentence.substring(i, i+1).toUpperCase();
-         } else if (sentence.substring(i-1, i) == " ") {
-            newString += sentence.substring(i, i+1).toUpperCase();
-         }
-          
-         newString += sentence.substring(i, i+1);    
+      newString += sentence.substring(0,1).toUpperCase();
+      for(int i = 1; i < sentence.length(); i ++) { 
+         if (sentence.substring(i-1, i).equals(" ")) {
+            newString += " " + sentence.substring(i, i+1).toUpperCase();
+         } else {
+            newString += sentence.substring(i, i+1);  
+         }  
       }
-      System.out.println(newString);   
-   } */
+      return newString;   
+   } 
    
    public static boolean detectPalindrome(String word) {
       String newString = "";
@@ -43,9 +44,9 @@ public class StringAlgorithms {
    }
 
    public static void main(String[] args) {
-      printCharacters("hello");
-      reverseWord("hello");
-     // capitalizeString("the quick brown fox");
+      System.out.println(printCharacters("hello"));
+      System.out.println(reverseWord("hello"));
+      System.out.println(capitalizeString("the quick brown fox"));
       System.out.println(detectPalindrome("racecar"));
    }
 }
