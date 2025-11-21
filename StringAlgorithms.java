@@ -47,10 +47,10 @@ public class StringAlgorithms {
       } 
    }
    
-   //public static char firstUniqueChar(String word) {
+  // public static char firstUniqueChar(String word) {
    
    
-   //}
+  // }
 
    public static void main(String[] args) {
       System.out.println(printCharacters("hello"));
