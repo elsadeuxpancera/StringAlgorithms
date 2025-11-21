@@ -5,8 +5,6 @@ public class StringAlgorithms {
       for(int i = 0; i < word.length(); i ++) {
          if (i < word.length()-1) {
             newString += (word.substring(i, i+1) + "\n");
-         } else {
-            newString += (word.substring(i, i+1));
          }
       }
       return newString;
