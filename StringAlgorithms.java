@@ -3,7 +3,11 @@ public class StringAlgorithms {
    public static String printCharacters(String word) {
       String newString = "";
       for(int i = 0; i < word.length(); i ++) {
-         newString += (word.substring(i, i+1) + "\n");
+         if (i < word.length()-1) {
+            newString += (word.substring(i, i+1) + "\n");
+         } else {
+            newString += (word.substring(i, i+1));
+         }
       }
       return newString;
    }   
@@ -42,6 +46,11 @@ public class StringAlgorithms {
          return false;
       } 
    }
+   
+   //public static char firstUniqueChar(String word) {
+   
+   
+   //}
 
    public static void main(String[] args) {
       System.out.println(printCharacters("hello"));
