@@ -3,9 +3,7 @@ public class StringAlgorithms {
    public static String printCharacters(String word) {
       String newString = "";
       for(int i = 0; i < word.length(); i ++) {
-         if (i < word.length()-1) {
             newString += (word.substring(i, i+1) + "\n");
-         }
       }
       return newString;
    }   
