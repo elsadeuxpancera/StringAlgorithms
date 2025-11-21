@@ -11,8 +11,7 @@ public class StringAlgorithms {
    public static String reverseWord(String word) {
       String newString = "";
       for(int i = word.length(); i > 0; i --) {
-         newString += word.substring(i-1, i);
-         
+         newString += word.substring(i-1, i); 
       }  
       return newString; 
    }
@@ -43,15 +42,22 @@ public class StringAlgorithms {
       } 
    }
    
-  // public static char firstUniqueChar(String word) {
-   
-   
-  // }
+   /* public static char firstUniqueChar(String word) {
+      for(int i = 0; i < word.length(); i ++) {
+         if(word.charAt(i) == 1) {
+            return word.charAt(i);
+         } else {
+            return ' ';
+         }
+      }
+      return ' ';
+   }*/
 
    public static void main(String[] args) {
       System.out.println(printCharacters("hello"));
       System.out.println(reverseWord("hello"));
       System.out.println(capitalizeString("the quick brown fox"));
       System.out.println(detectPalindrome("racecar"));
+      //System.out.println(firstUniqueChar("swiss"));
    }
 }
