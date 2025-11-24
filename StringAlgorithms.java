@@ -21,7 +21,7 @@ public class StringAlgorithms {
       newString += sentence.substring(0,1).toUpperCase();
       for(int i = 1; i < sentence.length(); i ++) { 
          if (sentence.substring(i-1, i).equals(" ")) {
-            newString += " " + sentence.substring(i, i+1).toUpperCase();
+            newString +=  sentence.substring(i, i+1).toUpperCase();
          } else {
             newString += sentence.substring(i, i+1);  
          }  
