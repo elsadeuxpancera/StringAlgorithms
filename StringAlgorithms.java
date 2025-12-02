@@ -57,7 +57,7 @@ public class StringAlgorithms {
       System.out.println(printCharacters("hello"));
       System.out.println(reverseWord("hello"));
       System.out.println(capitalizeString("the quick brown fox"));
-      System.out.println(detectPalindrome("racecar"));
+      System.out.println(detectPalindrome("RaceCar"));
       //System.out.println(firstUniqueChar("swiss"));
    }
 }
